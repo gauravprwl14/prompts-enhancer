@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Enhancer Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>
+        <span class="icon">✨</span>
+        Prompt Enhancer
+      </h1>
+      <div class="version">v1.0.0</div>
+    </header>
+
+    <main class="popup-content">
+      <section class="settings-section">
+        <h2>Quick Settings</h2>
+        
+        <div class="setting-item">
+          <label class="setting-label">
+            <input type="checkbox" id="enableExtension" checked>
+            <span class="checkbox-custom"></span>
+            Enable Extension
+          </label>
+          <p class="setting-description">Turn the prompt enhancer on/off</p>
+        </div>
+
+        <div class="setting-item">
+          <label class="setting-label">
+            <input type="checkbox" id="showKeyboardShortcuts" checked>
+            <span class="checkbox-custom"></span>
+            Keyboard Shortcuts
+          </label>
+          <p class="setting-description">Enable Ctrl/Cmd + Shift + E to toggle</p>
+        </div>
+
+        <div class="setting-item">
+          <label class="setting-label">
+            <input type="checkbox" id="showNotifications" checked>
+            <span class="checkbox-custom"></span>
+            Show Notifications
+          </label>
+          <p class="setting-description">Display success/error notifications</p>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>Supported Platforms</h2>
+        
+        <div class="platforms-grid">
+          <div class="platform-item active">
+            <div class="platform-icon">🤖</div>
+            <div class="platform-info">
+              <div class="platform-name">Claude</div>
+              <div class="platform-status">Active</div>
+            </div>
+          </div>
+          
+          <div class="platform-item coming-soon">
+            <div class="platform-icon">🚀</div>
+            <div class="platform-info">
+              <div class="platform-name">ChatGPT</div>
+              <div class="platform-status">Coming Soon</div>
+            </div>
+          </div>
+          
+          <div class="platform-item coming-soon">
+            <div class="platform-icon">💎</div>
+            <div class="platform-info">
+              <div class="platform-name">Gemini</div>
+              <div class="platform-status">Coming Soon</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>Quick Actions</h2>
+        <div class="quick-actions-list">
+          <div class="action-preview">
+            <span class="action-icon">✨</span>
+            <span>Improve</span>
+          </div>
+          <div class="action-preview">
+            <span class="action-icon">📝</span>
+            <span>Expand</span>
+          </div>
+          <div class="action-preview">
+            <span class="action-icon">📋</span>
+            <span>Summarize</span>
+          </div>
+          <div class="action-preview">
+            <span class="action-icon">🌐</span>
+            <span>Translate</span>
+          </div>
+          <div class="action-preview">
+            <span class="action-icon">🔍</span>
+            <span>Analyze</span>
+          </div>
+          <div class="action-preview">
+            <span class="action-icon">🎨</span>
+            <span>Creative</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>Usage Stats</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" id="totalEnhancements">0</div>
+            <div class="stat-label">Total Enhancements</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="favoriteAction">Improve</div>
+            <div class="stat-label">Most Used</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="popup-footer">
+      <div class="footer-links">
+        <button class="footer-btn" id="resetSettings">Reset Settings</button>
+        <button class="footer-btn" id="exportSettings">Export</button>
+      </div>
+      
+      <div class="footer-info">
+        <p>Made with ❤️ for better prompting</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 
